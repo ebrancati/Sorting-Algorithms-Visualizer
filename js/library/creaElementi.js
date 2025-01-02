@@ -1,9 +1,3 @@
-/**
- * Check if a file already exists in the dowloadedFiles directory
- * @param {string} id
- * @param {string} qualityCode
- * @returns {boolean} - If the file already exists return true
- */
 const creaElementi = (elements) => {
   let arr = []
   let random = 0;
@@ -16,7 +10,7 @@ const creaElementi = (elements) => {
     arr.push(random)
 
     elements[i].textContent = random;
-    elements[i].style.height = `${(random+1)*10}px`;
+    elements[i].style.height = `${(random+1)*1.5}vh`;
     elements[i].style.backgroundColor = "gray"
   }
 
